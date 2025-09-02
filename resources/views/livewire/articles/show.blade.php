@@ -1,0 +1,16 @@
+<?php
+
+use function Livewire\Volt\{state};
+use App\Models\Article;
+
+state(['article' => fn(Article $article) => $article]);
+
+?>
+
+<div>
+    <h1>論文詳細</h1>
+
+    <p>タイトル：{{ $article->title }}</>
+
+    <p>{!! nl2br($article->body) !!}</p>
+</div>
