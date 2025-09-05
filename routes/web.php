@@ -14,5 +14,3 @@ Volt::route('/articles/create', 'articles.create')->name('articles.create');
 Volt::route('/articles/{article}',  'articles.show')->name('articles.show');
 
 Volt::route('/articles/{article}/edit',  'articles.edit')->name('articles.edit');
-
-Volt::route('/articles/{article}/destroy',  'articles.destroy')->name('articles.destroy');
